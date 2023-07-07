@@ -1,4 +1,4 @@
-# Starting point
+# fx-os
 
 [![build-ublue](https://github.com/lucapatarca/fx-os/actions/workflows/build.yml/badge.svg)](https://github.com/lucapatarca/fx-os/actions/workflows/build.yml)
 
