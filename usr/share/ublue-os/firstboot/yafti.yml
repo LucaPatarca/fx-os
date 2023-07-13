@@ -32,6 +32,16 @@ screens:
         We have detected that you don't have Flathub's repository on your system. We will now add that repository to your system-wide list.
       actions:
         - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
+  gnome-settings:
+    source: yafti.screen.consent
+    values:
+      title: Gnome settings
+      description: |
+        We will now set some usefull settings for your system.
+      actions:
+        - run: gsettings set org.gnome.desktop.input-sources show-all-sources true
+        - run: gsettings set org.fedorahosted.background-logo-extension logo-file-dark /usr/share/fearlex-logos/fearlex-dark.svg
+        - run: gsettings set org.fedorahosted.background-logo-extension logo-file /usr/share/fearlex-logos/fearlex-light.svg
   applications:
     source: yafti.screen.package
     values:
@@ -100,7 +110,6 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
-
   final-screen:
     source: yafti.screen.title
     values:
