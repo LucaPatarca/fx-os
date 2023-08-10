@@ -42,6 +42,9 @@ screens:
         - run: gsettings set org.gnome.desktop.input-sources show-all-sources true
         - run: gsettings set org.fedorahosted.background-logo-extension logo-file-dark /usr/share/fearlex-logos/fearlex-dark.svg
         - run: gsettings set org.fedorahosted.background-logo-extension logo-file /usr/share/fearlex-logos/fearlex-light.svg
+        - run: gnome-extensions enable background-logo@fedorahosted.org
+        - run: gnome-extensions enable pop-shell@system76.com
+        - run: gnome-extensions enable dash-to-dock@micxgx.gmail.com
   applications:
     source: yafti.screen.package
     values:

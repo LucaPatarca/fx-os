@@ -57,6 +57,7 @@ rpm:
     - libadwaita
     - neovim
     - gnome-shell-extension-pop-shell
+    - gnome-shell-extension-dash-to-dock
     - xprop
     # Add your own below:
     # Example:
