@@ -59,7 +59,6 @@ rpm:
     - gnome-shell-extension-pop-shell
     - gnome-shell-extension-dash-to-dock
     - xprop
-    - kernel-devel
     # Add your own below:
     # Example:
     # - tilix
