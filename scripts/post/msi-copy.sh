@@ -3,3 +3,4 @@
 set -oue pipefail
 
 cp /tmp/scripts/msi-ec.ko /lib/modules/*/extra/
+depmod -a
