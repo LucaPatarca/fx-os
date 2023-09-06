@@ -2,7 +2,7 @@
 
 set -oue pipefail
 
-KERNEL_VERSION=$(sudo find /boot -name "vmlinuz*" -exec file {} \; | sed -e 's/^.* version \(.*\) (.*/\1/' | sort | head -n 1)
+KERNEL_VERSION=$(find /boot -name "vmlinuz*" -exec file {} \; | sed -e 's/^.* version \(.*\) (.*/\1/' | sort | head -n 1)
 
 echo "KERNEL_VERSION=$KERNEL_VERSION"
 
