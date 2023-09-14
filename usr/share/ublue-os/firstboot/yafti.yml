@@ -40,9 +40,10 @@ screens:
         We will now set some usefull settings for your system.
       actions:
         - run: gsettings set org.gnome.desktop.input-sources show-all-sources true
-        - run: gsettings set org.fedorahosted.background-logo-extension logo-file-dark /usr/share/fearlex-logos/fearlex-dark.svg
-        - run: gsettings set org.fedorahosted.background-logo-extension logo-file /usr/share/fearlex-logos/fearlex-light.svg
+        - run: gsettings set org.fedorahosted.background-logo-extension logo-file-dark /usr/share/fearlex-logos/fearlex-dark.png
+        - run: gsettings set org.fedorahosted.background-logo-extension logo-file /usr/share/fearlex-logos/fearlex-light.png
         - run: gsettings set org.fedorahosted.background-logo-extension logo-always-visible true
+        - run: gsettings set org.fedorahosted.background-logo-extension logo-size 7.5
         - run: gnome-extensions enable background-logo@fedorahosted.org
         - run: gnome-extensions enable pop-shell@system76.com
         - run: gnome-extensions enable dash-to-dock@micxgx.gmail.com
