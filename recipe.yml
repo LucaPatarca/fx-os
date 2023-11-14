@@ -68,6 +68,7 @@ rpm:
     - libguestfs-tools
     - python3-libguestfs
     - make
+    - kernel-devel
     # Add your own below:
     # Example:
     # - tilix
