@@ -67,6 +67,7 @@ rpm:
     - virt-viewer
     - libguestfs-tools
     - python3-libguestfs
+    - make
     # Add your own below:
     # Example:
     # - tilix
